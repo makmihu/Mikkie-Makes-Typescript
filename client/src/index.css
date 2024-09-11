@@ -1,0 +1,678 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222831;
+}
+
+/* navbar */
+.navbar {
+  background-color: #143b32;
+  padding: .4em .4em;
+  margin: .5em 2em;
+  position: sticky;
+  top: .75em;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-radius: .75em;
+  z-index: 50;
+}
+.links {
+  color: #b3fbeb;   
+  text-decoration: none;
+  font-size: 1em;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+.header{
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url(./components/images/noise.png), url(./components/images/contours.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto;
+}
+.logo {
+  background-image: url(./components/images/logo.jpg);
+  background-size: cover;
+  margin-right: 1em;
+  transform: rotate(-15deg);
+}
+  .big{
+    margin-top: .5em;
+    height: 4.5em;
+    width: 4.5em;
+  }
+  .small{
+    height: 3em;
+    width: 3em;
+  }
+.headerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headerText {
+  color: #fab7b1;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans Regular', 'Lucida Sans',  'Geneva', Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+  .head {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+  .sub {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+main {
+  background-color: #393e46;
+  padding: 25px 3em;
+}
+
+/* cards */
+.cardsContainer {
+  display: grid;
+}
+.card {
+  border: 3px solid black;
+  border-radius: .75em;
+  margin: 0 .75em .5em .75em;
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./components/images/bamboo.png);
+}
+  .productCard{
+    background-color: #fad1b1;
+  }
+  .cartCard{
+    background-color: #7a4c48;
+    color: #9cbab4;
+  }
+  .inventoryCard {
+  background-color: #fab7b1;
+  }
+.cardTitle {
+  color: #9cbab4;
+  padding: 5px 0;
+  margin: 0;    
+  width: 100%;
+  text-align: center;
+  font-family: 'Arial Black', 'Arial Narrow Bold', sans-serif;
+  font-size: 28px;
+}
+  .titleWBackground {
+    background-color: #7a4c48;
+    background-image: url(./components/images/bamboo.png);
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto;
+    border-top-left-radius: .75em;
+    border-top-right-radius: .75em;
+    border: 3.5px solid #222831;
+  }
+.cardImgContainer {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 3.5px solid #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  margin: .5em 0;
+}
+.cardImg {
+  object-fit: cover;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.cardMain {
+  color: #9cbab4;
+  margin: 0 0 .5em 0;
+  padding: 5px 5px .5em 5px;
+  border: 3.5px solid #222831;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  scrollbar-color: #9cbab4 #222831;
+  scrollbar-width: thin;
+  width: 100%;
+  background-color: #7a4c48;
+  background-image: url(./components/images/bamboo.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+  .topFlat {
+    border-bottom-left-radius: .75em;
+    border-bottom-right-radius: .75em;
+  }
+  .topRounded {
+    border-radius: .75em;
+  }
+.inventoryDescr {  
+  overflow-y: auto;
+  background-color: #fab7b1;
+  color: #487a70;
+  border-radius: .75em;
+  width: 100%;
+  height: 140px;
+  font-size: 17px;
+}
+.homeDescr {
+  overflow-y: auto;
+  height: 6.5em;
+  font-size: 1em;
+}
+.inputWLabel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0;
+}
+  .border {
+    border-bottom: 2px solid #ccc;
+  }
+.inventoryMaterials {
+  text-align: center;
+}
+.inventoryItem {
+  margin: 5px;
+}
+.checkboxContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+  .left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+  }
+.formInputs {
+  background-color: #fab7b1;
+  color:#487a70;
+  margin: 5px;
+  padding: 5px;
+  border-radius: .5em;
+  scrollbar-width: thin;
+  scrollbar-color: #9cbab4 #222831;
+}  
+  .wide {
+    width: 12.75em;
+  }
+  .tall {
+    height: 2.5em;
+  }
+  .num {
+    width: 4em;
+  }
+  .select {
+    width: 8em;
+  }
+
+.materialLegend {
+  padding: .5em 0;
+}
+.btnContainer {
+  display: flex;
+  width: 100%;
+}
+  .multiple {
+    justify-content: space-evenly;
+  }
+  .single{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center; 
+    padding: 1em; 
+  }
+button {
+  background-color: #143b32;
+  color: #b3fbeb;
+  border-radius: 2.5em;
+  padding: 5px .5em;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans Regular', 'Lucida Sans',  'Geneva', Verdana, sans-serif;
+}
+  .cardBtn {
+    font-size: .75em;
+    width: 7.5em;
+  }
+  .productBtn {
+    font-size: 1em;
+  }
+  .formBtn {
+    align-self: center;
+    font-size: 1em;
+    width: 12em;
+    grid-column: 1 / -1;
+  }
+  .editFormBtn {
+    align-self: center;
+    font-size: .75em;
+    width: 10em;
+  }
+  .loginFormBtn {
+    align-self: center;
+    font-size: 1em;
+    width: 8em;
+  }
+
+/* cart */
+.emptyCart{
+  background-color: #393e46;
+  padding: 1em 0 18em;
+  flex-grow: 1;
+}
+.emptyCartItem{
+  text-align: center;
+  color: #9cbab4;
+}
+/* login */
+.loginContainer {
+  margin: .25em .25em .25em .25em;
+  padding: 3em .75em .75em .75em;
+  background-color:#487a70;
+  text-align: center;
+  border: #143b32 5px solid;
+  background-image: url("./components/images/bamboo.png") ;
+}
+.loginText {
+  font-size: 1em;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+/* form */
+.formBox {
+  background-color:#ba9f9c;
+  background-image: url(./components/images/noise.png);
+  margin-bottom: 30px;
+  padding: 5px 1em;
+  border: 3px solid black;
+  border-radius: .5em; 
+}
+  .formTopLeft {  
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    padding: 1em;
+  }
+  .formTopRight {
+    grid-column: 1 / -1;
+    margin: 1em;
+    width: 90%;
+    margin-left: 1.5em;
+    height: 3.5em;
+  }
+  .formBottom {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    border-top: #143b32 3px solid;
+    border-bottom: #143b32 3px solid;
+  }
+    .bottomLeft {
+      grid-column: 1 / 3;
+    }
+    .bottomMiddle {
+      grid-column: 3 / 5;
+    }
+    .bottomRight {
+      grid-column: 5 / -1;
+    }
+.formItem {
+  background-color: #7a4c48;
+  color:#9cbab4;
+  padding: 5px .75em;
+  border-radius: .75em;
+}
+  .textarea {
+    margin: 1em .5em;
+    font-size: 1em;
+  }
+  .input {
+    margin: 5px .5em;
+    font-size: 1em;
+  }
+  .loginInput {
+    margin: 0 1em 1em 1em;
+    font-size: 1em;
+    border: #143b32 3px solid;
+  } 
+.labels {
+  color:#143b32;
+  padding: 0;
+}
+  .mainLabels {
+    margin: 5px .5em;
+    font-size: 1em;
+  }
+  .labelTooLong {
+    font-size: .75em;
+  }
+  .centered {
+    text-align: center;
+  }
+.formSelectBox {
+  font-size: 18px;
+  color:#9cbab4;
+  margin-left: 5px;
+  padding: 2px;
+  background-color: #7a4c48;
+  margin-bottom: 5px;
+  border-radius: .5em;
+}
+
+.formSingleCheckbox {
+  border-top: #143b32 2px solid;
+  border-bottom: #143b32 2px solid;
+}
+
+
+/* main and aside */
+.mainWithAside {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.infoSection {
+  border: 5px solid #ccc;
+  padding: .5em 1.5em;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+  .about {
+    color: #487a70;
+  }
+.productDescContainer {
+  grid-column: 5 / -1;
+  background-color: #7a5e48;
+  background-image: url(./components/images/noise.png);
+  border: 5px solid #ccc;
+  padding: 2em 7em;
+  color: #ccc;
+  align-items: center;
+  text-align: center;
+}
+.infoHeader {
+  font-size: 2.2em;
+  font-weight: bolder;
+  margin: .5em 0;
+}
+.info {
+  font-size: 1.7em;
+  margin: 1em 0;
+}
+.infoNoMargin {
+  font-size: 1.7em;
+  margin: 0;
+}
+.materialSpan {
+  display: inline-block;
+}
+.externalLinks {
+  width: 100%;
+  color: #ba9f9c;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2em;
+  padding: 22px 8em ;
+}
+.aside {
+  display: none;
+}
+
+a {
+  color: #ba9f9c;
+  background-color: none;
+}
+
+a:hover {
+  color: #fab7b1;
+}
+
+
+@media only screen and (550px < width <= 750px){
+  .navbar {
+    padding: .25em 3em;
+  }
+  .links {
+    font-size: 1.4em;  
+  }
+  .head {
+    font-size: 3em;
+    margin: 0 1.5em 0 .5em;
+  }
+  .sub {
+    font-size: 1.8em;  
+  }
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .infoSection {
+    padding: 1.5em 3.5em;
+  }
+  .loginContainer {
+    margin: 1.75em 2em 1.75em 2em;
+    padding: 3em 1.75em 1.75em 1.75em;
+  }
+  .loginText {
+    font-size: 1em;
+  }
+  .loginFormBtn {
+    font-size: 1em;
+    width: 8em;
+  }
+  .loginInput {
+    font-size: 1.25em;
+  }
+  .formTopRight {
+    width: 90%;
+    margin-left: 1.5em;
+    height: 3.5em;
+  }
+  .formCheckboxContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+@media only screen and (750px < width <= 1024px){
+  .navbar {
+    padding: .25em 3em;
+  }
+  .links {
+    font-size: 1.8em;  
+  }
+  .head {
+    font-size: 4.5em;
+    margin: 0 2em 0 .5em;
+  }
+  .sub {
+    font-size: 1.8em;  
+  }
+  .cardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .infoSection {
+    padding: 2.5em 7em;
+  }
+  .loginContainer {
+    margin: 3em 5em 3em 5em;
+    padding: 5em 2em 2em 2em;
+  }
+  .loginText {
+    font-size: 1.5em;
+  }
+  .loginFormBtn {
+    font-size: 1.5em;
+    width: 10em;
+  }
+  .loginInput {
+    font-size: 1.5em;
+  }
+  .formBox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+  .formTopLeft {  
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    padding: 1em;
+  }
+  .formTopRight {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin: 0 0 0 1.75em;
+    height: 4.5em;
+  }
+  .bottomLeft {
+    grid-column: 1 / 2;
+    grid-row: 4 / 7;
+  }
+  .bottomLeft > input {
+    max-width: 4.25em;
+    font-size: 1em;
+  }
+  .bottomMiddle {
+    grid-column: 2 / 4;
+    grid-row: 4 / 7;
+  }
+  .bottomRight {
+    grid-column: 4 / -1;
+    grid-row: 4 / 7;
+  }
+  .formCheckboxContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+@media only screen and (width > 1024px){
+  .navbar {
+    padding: .4em 6em;
+    margin: .5em 2em;
+  }
+  .links {
+    font-size: 2.2em;  
+  }
+  .big{
+    margin-top: .5em;
+    height: 6.5em;
+    width: 6.5em;
+  }
+  .small{
+    height: 4em;
+    width: 4em;
+  }
+  .head {
+    font-size: 6em;
+  }
+  .sub {
+    font-size: 1.8em;  
+  }
+  .cardsContainer {
+    grid-template-columns: repeat(4, 1fr);
+  } 
+  .infoSection {
+    grid-column: 1 / 5;
+    padding: 2.5em 7em;
+  }
+  .aside {
+    padding: 2.5em 8em;
+    border: 5px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .brown {
+    background-color: #7a4c48;
+    background-image: url(./components/images/gridlines.png);
+    grid-column: 5 / -1;
+    border-left: none;
+  }
+  .green{
+    background-color: #487a70;
+    background-image: url(./components/images/gridlines-opaque.png);
+    grid-column: 1 / 5;
+    grid-row: 1 / -1;
+    border-right: none;
+  }
+  .asideImg {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 5px solid #ccc;
+  }
+  .loginContainer {
+    margin: 5em 10em 5em 10em;
+    padding: 5em 5em 2em 5em;
+  }
+  .loginText {
+    font-size: 2em;
+  }
+  .loginFormBtn {
+    font-size: 2em;
+    width: 15em;
+  }
+  .loginInput {
+    font-size: 1.75em;
+  }
+  .formBox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .formTopLeft {  
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 4;
+    padding: 1em;
+  }
+  .formTopRight {
+    grid-column: 4 / -1;
+    margin: 1em;
+    height: 8.5em;
+  }
+  .bottomLeft {
+    grid-column: 1 / 2;
+  }
+  .bottomLeft > input {
+    max-width: 4.25em;
+    font-size: 1em;
+  }
+  .bottomMiddle {
+    grid-column: 2 / 4;
+  }
+  .bottomRight {
+    grid-column: 4 / -1;
+  }
+  .formCheckboxContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
